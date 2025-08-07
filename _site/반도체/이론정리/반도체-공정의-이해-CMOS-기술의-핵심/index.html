@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반도체 공정의 이해: CMOS 기술의 핵심 | PaperPlanning's Engineering Blog</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>반도체 공정의 이해: CMOS 기술의 핵심 | PaperPlanning’s Engineering Blog</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="반도체 공정의 이해: CMOS 기술의 핵심" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="나는 오늘 CMOS(Complementary Metal-Oxide-Semiconductor) 기술에 대해 깊이 파고들어 보려 한다. 반도체 공정의 근간을 이루는 이 기술이 어떻게 현대 전자기기의 심장이 되었는지, 그 핵심 원리와 중요성을 나만의 시선으로 정리해 볼 참이다." />
+<meta property="og:description" content="나는 오늘 CMOS(Complementary Metal-Oxide-Semiconductor) 기술에 대해 깊이 파고들어 보려 한다. 반도체 공정의 근간을 이루는 이 기술이 어떻게 현대 전자기기의 심장이 되었는지, 그 핵심 원리와 중요성을 나만의 시선으로 정리해 볼 참이다." />
+<link rel="canonical" href="http://localhost:4000/%EB%B0%98%EB%8F%84%EC%B2%B4/%EC%9D%B4%EB%A1%A0%EC%A0%95%EB%A6%AC/%EB%B0%98%EB%8F%84%EC%B2%B4-%EA%B3%B5%EC%A0%95%EC%9D%98-%EC%9D%B4%ED%95%B4-CMOS-%EA%B8%B0%EC%88%A0%EC%9D%98-%ED%95%B5%EC%8B%AC/" />
+<meta property="og:url" content="http://localhost:4000/%EB%B0%98%EB%8F%84%EC%B2%B4/%EC%9D%B4%EB%A1%A0%EC%A0%95%EB%A6%AC/%EB%B0%98%EB%8F%84%EC%B2%B4-%EA%B3%B5%EC%A0%95%EC%9D%98-%EC%9D%B4%ED%95%B4-CMOS-%EA%B8%B0%EC%88%A0%EC%9D%98-%ED%95%B5%EC%8B%AC/" />
+<meta property="og:site_name" content="PaperPlanning’s Engineering Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-08-07T10:00:00+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="반도체 공정의 이해: CMOS 기술의 핵심" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-08-07T10:00:00+09:00","datePublished":"2025-08-07T10:00:00+09:00","description":"나는 오늘 CMOS(Complementary Metal-Oxide-Semiconductor) 기술에 대해 깊이 파고들어 보려 한다. 반도체 공정의 근간을 이루는 이 기술이 어떻게 현대 전자기기의 심장이 되었는지, 그 핵심 원리와 중요성을 나만의 시선으로 정리해 볼 참이다.","headline":"반도체 공정의 이해: CMOS 기술의 핵심","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/%EB%B0%98%EB%8F%84%EC%B2%B4/%EC%9D%B4%EB%A1%A0%EC%A0%95%EB%A6%AC/%EB%B0%98%EB%8F%84%EC%B2%B4-%EA%B3%B5%EC%A0%95%EC%9D%98-%EC%9D%B4%ED%95%B4-CMOS-%EA%B8%B0%EC%88%A0%EC%9D%98-%ED%95%B5%EC%8B%AC/"},"url":"http://localhost:4000/%EB%B0%98%EB%8F%84%EC%B2%B4/%EC%9D%B4%EB%A1%A0%EC%A0%95%EB%A6%AC/%EB%B0%98%EB%8F%84%EC%B2%B4-%EA%B3%B5%EC%A0%95%EC%9D%98-%EC%9D%B4%ED%95%B4-CMOS-%EA%B8%B0%EC%88%A0%EC%9D%98-%ED%95%B5%EC%8B%AC/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+    <header class="site-header">
+    <div class="wrapper">
+        <a class="site-title" href="/">PaperPlanning&#39;s Engineering Blog</a>
+        <nav class="site-nav">
+            <a href="/">Home</a>
+            <a href="/about/">About</a> {# About 페이지는 나중에 추가할 수 있습니다. #}
+        </nav>
+    </div>
+</header>
+
+
+    <main class="page-content">
+        <div class="wrapper">
+            <article class="post-content">
+    <header class="post-header">
+        <h1 class="post-title">반도체 공정의 이해: CMOS 기술의 핵심</h1>
+        <p class="post-meta">2025년 08월 07일 </p>
+    </header>
+
+    <p>나는 오늘 CMOS(Complementary Metal-Oxide-Semiconductor) 기술에 대해 깊이 파고들어 보려 한다. 반도체 공정의 근간을 이루는 이 기술이 어떻게 현대 전자기기의 심장이 되었는지, 그 핵심 원리와 중요성을 나만의 시선으로 정리해 볼 참이다.</p>
+
+<p>CMOS는 이름 그대로 P형과 N형 MOSFET을 상보적으로(complementary) 사용하여 회로를 구성하는 방식이다. 이 방식의 가장 큰 장점은 바로 낮은 전력 소모에 있다. 디지털 회로에서 스위칭이 일어날 때만 전류가 흐르기 때문에, 대기 상태에서는 거의 전력을 소모하지 않는다. 이는 배터리로 구동되는 모바일 기기에서 특히 중요한 요소로 작용한다.</p>
+
+<p>공정 관점에서 보면, CMOS는 여러 복잡한 단계를 거쳐 만들어진다. 산화(Oxidation), 포토리소그래피(Photolithography), 식각(Etching), 이온 주입(Ion Implantation), 증착(Deposition) 등의 과정이 반복적으로 수행된다. 각 단계는 나름의 정교함과 기술적 난이도를 가지고 있으며, 이 모든 과정이 완벽하게 조화를 이루어야만 고성능의 반도체 칩이 탄생할 수 있다.</p>
+
+<p>특히, 미세화가 진행될수록 각 공정의 중요성은 더욱 커진다. 나노미터 단위의 선폭을 구현하기 위해서는 극자외선(EUV) 리소그래피와 같은 첨단 기술이 필수적이다. 또한, 트랜지스터의 크기가 줄어들면서 발생하는 단채널 효과(Short Channel Effect)와 같은 문제들을 해결하기 위해 새로운 구조(예: FinFET, GAAFET)와 재료가 끊임없이 연구되고 있다.</p>
+
+<p>나는 이 모든 과정이 마치 정교한 예술 작품을 만드는 것과 같다고 생각한다. 수많은 시행착오와 연구 끝에 하나의 칩이 완성되는 것을 보면, 경이로움을 금할 수 없다. 앞으로도 이 분야의 발전을 계속해서 지켜보고, 나만의 방식으로 해석하며 기록해 나갈 것이다.</p>
+
+</article>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+    <div class="wrapper">
+        <p>&copy; 2025 PaperPlanning's Engineering Blog. All rights reserved.</p>
+        <p>Powered by Jekyll & GitHub Pages</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -2,17 +2,28 @@ title: PaperPlanning's Engineering Blog
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   전자공학의 다양한 분야(반도체, 전자회로, RF회로, RF공학, 통신공학, 디지털회로, 신호처리, 인공지능)에 대한 지식을 독백체로 정리하는 블로그입니다.
-baseurl: "/PaperPlanning.github.io" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://PaperPlanning.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: your_twitter_username # Optional
 github_username:  PaperPlanning # Optional
 
 # Build settings
 markdown: kramdown
-theme: minima
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block_html: true
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+
+sass_dir: _sass
+
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:title/
 
 # Exclude from processing.
 # The following items will not be processed, by default.

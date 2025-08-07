@@ -1,0 +1,173 @@
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+
+// Color Palette
+$dark-bg: #1a1a1a;
+$darker-bg: #121212;
+$text-color: #e0e0e0;
+$light-text-color: #a0a0a0;
+$accent-color: #00bcd4; // Cyan-like for a techy, modern feel
+$accent-dark: #00838f;
+$border-color: #333;
+
+// Typography
+$font-family-body: 'Noto Sans KR', 'Roboto', sans-serif;
+$font-family-heading: 'Roboto', 'Noto Sans KR', sans-serif;
+
+// Base Styles
+body {
+  font-family: $font-family-body;
+  background-color: $dark-bg;
+  color: $text-color;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+// Header
+.site-header {
+  background-color: $darker-bg;
+  border-bottom: 1px solid $border-color;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.site-title {
+  font-family: $font-family-heading;
+  font-size: 2.5em;
+  color: $accent-color;
+  text-decoration: none;
+  margin: 0;
+}
+
+.site-nav {
+  margin-top: 10px;
+}
+
+.site-nav a {
+  color: $light-text-color;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.site-nav a:hover {
+  color: $accent-color;
+}
+
+// Main Content
+.page-content {
+  padding: 40px 0;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li {
+  background-color: $darker-bg;
+  border: 1px solid $border-color;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.post-list li:hover {
+  transform: translateY(-5px);
+}
+
+.post-link {
+  font-family: $font-family-heading;
+  font-size: 1.8em;
+  color: $accent-color;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.post-meta {
+  font-size: 0.9em;
+  color: $light-text-color;
+  margin-bottom: 15px;
+}
+
+.post-excerpt {
+  color: $text-color;
+}
+
+// Post Page
+.post-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.post-title {
+  font-family: $font-family-heading;
+  font-size: 3em;
+  color: $accent-color;
+  margin-bottom: 10px;
+}
+
+.post-content {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-heading;
+    color: $accent-color;
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  a {
+    color: $accent-color;
+    text-decoration: none;
+    border-bottom: 1px solid $accent-dark;
+    transition: color 0.3s ease, border-color 0.3s ease;
+  }
+
+  a:hover {
+    color: lighten($accent-color, 10%);
+    border-color: lighten($accent-color, 10%);
+  }
+
+  code {
+    background-color: #333;
+    color: #fff;
+    padding: 2px 4px;
+    border-radius: 4px;
+  }
+
+  pre {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+
+    code {
+      background-color: transparent;
+      color: #fff;
+      padding: 0;
+    }
+  }
+}
+
+// Footer
+.site-footer {
+  background-color: $darker-bg;
+  border-top: 1px solid $border-color;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9em;
+  color: $light-text-color;
+}
