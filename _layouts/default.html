@@ -9,33 +9,8 @@
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
         tex2jax: {
-          inlineMath: [['
-<body>
-    {% include header.html %}
-
-    <main class="page-content">
-        <div class="wrapper">
-            {{ content }}
-        </div>
-    </main>
-
-    {% include footer.html %}
-</body>
-</html>
-,'
-<body>
-    {% include header.html %}
-
-    <main class="page-content">
-        <div class="wrapper">
-            {{ content }}
-        </div>
-    </main>
-
-    {% include footer.html %}
-</body>
-</html>
-], ['\\(','\\)']],
+          inlineMath: [['$','$'], ['\\(','\\)']],
+          displayMath: [['\[','\]'], ['$$','$$']],
           processEscapes: true
         },
         "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
