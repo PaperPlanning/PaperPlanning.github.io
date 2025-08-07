@@ -9,14 +9,14 @@
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
         tex2jax: {
-          inlineMath: [['$','$'], ['\\(','\\)']],
+          inlineMath: [['$','$'], ['\(','\)']],
           displayMath: [['\[','\]'], ['$$','$$']],
           processEscapes: true
         },
         "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
       });
     </script>
-    <script type="text/javascript" async
+    <script type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
     </script>
 </head>
@@ -30,5 +30,14 @@
     </main>
 
     {% include footer.html %}
+
+    <script type="text/javascript">
+      // Ensure MathJax processes the content after the page is loaded
+      window.onload = function() {
+        if (typeof MathJax !== 'undefined') {
+          MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+        }
+      };
+    </script>
 </body>
 </html>
