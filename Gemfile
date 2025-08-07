@@ -2,6 +2,7 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.3"
 gem "jekyll-feed", "~> 0.17"
 gem "jekyll-seo-tag", "~> 2.8"
+gem "jekyll-paginate", "~> 1.1.0"
 
 # Windows and JRuby does not include nokogiri
 # gem "nokogiri", ">= 1.15.4", :platforms => [:ruby, :jruby, :mswin, :mingw, :x64_mingw]

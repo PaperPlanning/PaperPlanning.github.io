@@ -9,6 +9,7 @@ github_username:  PaperPlanning # Optional
 
 # Build settings
 future: true
+paginate: 100
 markdown: kramdown
 kramdown:
   math_engine: mathjax
@@ -19,6 +20,7 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-paginate
 
 sass_dir: _sass
 
