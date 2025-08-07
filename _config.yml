@@ -8,6 +8,7 @@ twitter_username: your_twitter_username # Optional
 github_username:  PaperPlanning # Optional
 
 # Build settings
+future: true
 markdown: kramdown
 kramdown:
   math_engine: mathjax
